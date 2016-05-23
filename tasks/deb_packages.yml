@@ -1,5 +1,11 @@
 # Install packages for Debian
 ---
+- name: rsyslog repository
+  tags:
+    - rsyslog
+    - packages
+  apt_repository: repo="ppa:adiscon/v8-stable" update_cache=yes
+    
 - name: install packages for Debian
   tags:
     - rsyslog
